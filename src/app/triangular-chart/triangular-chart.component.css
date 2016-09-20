@@ -1,0 +1,33 @@
+:host,
+:host .container {
+    width: 100%;
+    display:block;
+}
+:host .axis .domain {
+  display: none;
+}
+
+:host line.grid {
+    stroke: #999;
+}
+:host line.dash {
+    stroke: #333;
+    stroke-width: .5;
+}
+:host text.label {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1;
+}
+:host path.arrow,
+:host text.label {
+    fill: #333;
+    cursor: pointer;
+}
+:host circle {
+    fill: rgba(100,75,170,.8);
+    stroke: rgb(100,75,170);
+    stroke-width: 1;
+}

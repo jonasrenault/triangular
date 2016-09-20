@@ -4,17 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { TriangularChartComponent } from './triangular-chart/triangular-chart.component';
+import { DepartmentsComponent } from './departments/departments.component';
+import { DepartmentService } from './department.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TriangularChartComponent,
+    DepartmentsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [DepartmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

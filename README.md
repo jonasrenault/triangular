@@ -1,31 +1,18 @@
-# Triangular
+# Angular2 D3.js integration
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.8.
+This is an example application demonstrating Angular2 D3.js v4 integration.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Sources
 
-## Code scaffolding
+* [Chris Given's](https://bl.ocks.org/cmgiven) [Triangular Scatterplot](https://bl.ocks.org/cmgiven/a0f58034cea5331a814b30b74aacb8af) was the source for the D3.js code and data.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+* [tomwanzec's](https://github.com/tomwanzek) [d3-ng2-service](https://github.com/tomwanzek/d3-ng2-service) project was used for integration between Angular2 and D3.js v4's
 
-## Build
+# License
+Released under the [The MIT License](https://opensource.org/licenses/MIT).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+# Improvements
 
-## Running unit tests
+* As mentioned on Chris Given's page it would be nice to have make the graph rotate smoothly around its center.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [INSEE](http://www.insee.fr/fr/themes/detail.asp?reg_id=99&ref_id=emploi-zone-2008) provides the same type of data for different years. [Les decodeurs](http://www.lemonde.fr/les-decodeurs/article/2016/09/19/visualisez-vingt-cinq-ans-de-desindustrialisation-dans-les-departements-francais_5000083_4355770.html) have used that data to display a timeline map showing the importance of one sector through the years. It would be nice to get the data by year with a slider control.
