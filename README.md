@@ -9,8 +9,7 @@ This is an example application demonstrating Angular2 D3.js v4 integration.
 * [tomwanzec's](https://github.com/tomwanzek) [d3-ng2-service](https://github.com/tomwanzek/d3-ng2-service) project was used for integration between Angular2 and D3.js v4's
 
 # Live Demo
-
-
+[Live Demo](https://jonasrenault.github.io/triangular/)
 
 # Improvements
 
