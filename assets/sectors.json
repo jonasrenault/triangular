@@ -1,0 +1,542 @@
+[
+  {
+    "department": "AIN",
+    "i": 67,
+    "ii": 43,
+    "iii": 40
+  },
+  {
+    "department": "AISNE",
+    "i": 56,
+    "ii": 71,
+    "iii": 66
+  },
+  {
+    "department": "ALLIER",
+    "i": 65,
+    "ii": 45,
+    "iii": 57
+  },
+  {
+    "department": "Bses ALPES",
+    "i": 15,
+    "ii": 8,
+    "iii": 12
+  },
+  {
+    "department": "Htes ALPES",
+    "i": 16,
+    "ii": 8,
+    "iii": 13
+  },
+  {
+    "department": "ALPES Mmes",
+    "i": 31,
+    "ii": 61,
+    "iii": 122
+  },
+  {
+    "department": "ARDECHE",
+    "i": 48,
+    "ii": 32,
+    "iii": 25
+  },
+  {
+    "department": "ARDENNES",
+    "i": 25,
+    "ii": 53,
+    "iii": 35
+  },
+  {
+    "department": "ARIEGE",
+    "i": 33,
+    "ii": 17,
+    "iii": 14
+  },
+  {
+    "department": "AUBE",
+    "i": 28,
+    "ii": 48,
+    "iii": 36
+  },
+  {
+    "department": "AUDE",
+    "i": 50,
+    "ii": 20,
+    "iii": 32
+  },
+  {
+    "department": "AVEYRON",
+    "i": 70,
+    "ii": 32,
+    "iii": 29
+  },
+  {
+    "department": "BOUCHES DU RH.",
+    "i": 42,
+    "ii": 143,
+    "iii": 226
+  },
+  {
+    "department": "CALVADOS",
+    "i": 70,
+    "ii": 55,
+    "iii": 69
+  },
+  {
+    "department": "CANTAL",
+    "i": 45,
+    "ii": 13,
+    "iii": 20
+  },
+  {
+    "department": "CHARENTE",
+    "i": 65,
+    "ii": 36,
+    "iii": 38
+  },
+  {
+    "department": "CHARENTE Mme",
+    "i": 79,
+    "ii": 39,
+    "iii": 65
+  },
+  {
+    "department": "CHER",
+    "i": 43,
+    "ii": 41,
+    "iii": 36
+  },
+  {
+    "department": "CORREZE",
+    "i": 64,
+    "ii": 23,
+    "iii": 29
+  },
+  {
+    "department": "COTE D'OR",
+    "i": 43,
+    "ii": 41,
+    "iii": 59
+  },
+  {
+    "department": "COTES DU NORD",
+    "i": 131,
+    "ii": 35,
+    "iii": 62
+  },
+  {
+    "department": "CREUSE",
+    "i": 58,
+    "ii": 13,
+    "iii": 17
+  },
+  {
+    "department": "DORDOGNE",
+    "i": 104,
+    "ii": 34,
+    "iii": 41
+  },
+  {
+    "department": "DOUBS",
+    "i": 35,
+    "ii": 67,
+    "iii": 39
+  },
+  {
+    "department": "DROME",
+    "i": 46,
+    "ii": 38,
+    "iii": 35
+  },
+  {
+    "department": "EURE",
+    "i": 48,
+    "ii": 52,
+    "iii": 45
+  },
+  {
+    "department": "EURE & LOIR",
+    "i": 44,
+    "ii": 27,
+    "iii": 38
+  },
+  {
+    "department": "FINISTERE",
+    "i": 164,
+    "ii": 76,
+    "iii": 89
+  },
+  {
+    "department": "GARD",
+    "i": 40,
+    "ii": 51,
+    "iii": 52
+  },
+  {
+    "department": "HAUTE GARONNE",
+    "i": 64,
+    "ii": 67,
+    "iii": 84
+  },
+  {
+    "department": "GERS",
+    "i": 63,
+    "ii": 10,
+    "iii": 16
+  },
+  {
+    "department": "GIRONDE",
+    "i": 115,
+    "ii": 107,
+    "iii": 170
+  },
+  {
+    "department": "HERAULT",
+    "i": 62,
+    "ii": 40,
+    "iii": 71
+  },
+  {
+    "department": "ILLE & V.",
+    "i": 137,
+    "ii": 60,
+    "iii": 82
+  },
+  {
+    "department": "INDRE",
+    "i": 54,
+    "ii": 30,
+    "iii": 32
+  },
+  {
+    "department": "INDRE & L.",
+    "i": 61,
+    "ii": 41,
+    "iii": 55
+  },
+  {
+    "department": "ISERE",
+    "i": 68,
+    "ii": 136,
+    "iii": 78
+  },
+  {
+    "department": "JURA",
+    "i": 39,
+    "ii": 34,
+    "iii": 27
+  },
+  {
+    "department": "LANDES",
+    "i": 70,
+    "ii": 25,
+    "iii": 28
+  },
+  {
+    "department": "LOIR & CHER",
+    "i": 51,
+    "ii": 27,
+    "iii": 30
+  },
+  {
+    "department": "LOIRE",
+    "i": 56,
+    "ii": 160,
+    "iii": 82
+  },
+  {
+    "department": "Hte LOIRE",
+    "i": 52,
+    "ii": 23,
+    "iii": 22
+  },
+  {
+    "department": "LOIRE INF.",
+    "i": 101,
+    "ii": 108,
+    "iii": 105
+  },
+  {
+    "department": "LOIRET",
+    "i": 51,
+    "ii": 51,
+    "iii": 54
+  },
+  {
+    "department": "LOT",
+    "i": 41,
+    "ii": 10,
+    "iii": 16
+  },
+  {
+    "department": "LOT & GAR.",
+    "i": 70,
+    "ii": 24,
+    "iii": 30
+  },
+  {
+    "department": "LOZERE",
+    "i": 22,
+    "ii": 5,
+    "iii": 7
+  },
+  {
+    "department": "MAINE & L.",
+    "i": 104,
+    "ii": 65,
+    "iii": 65
+  },
+  {
+    "department": "MANCHE",
+    "i": 116,
+    "ii": 42,
+    "iii": 56
+  },
+  {
+    "department": "MARNE",
+    "i": 44,
+    "ii": 57,
+    "iii": 67
+  },
+  {
+    "department": "Hte MARNE",
+    "i": 25,
+    "ii": 28,
+    "iii": 28
+  },
+  {
+    "department": "MAYENNE",
+    "i": 74,
+    "ii": 23,
+    "iii": 28
+  },
+  {
+    "department": "MEURTHE & M.",
+    "i": 23,
+    "ii": 127,
+    "iii": 91
+  },
+  {
+    "department": "MEUSE",
+    "i": 24,
+    "ii": 31,
+    "iii": 27
+  },
+  {
+    "department": "MORBIHAN",
+    "i": 132,
+    "ii": 47,
+    "iii": 59
+  },
+  {
+    "department": "MOSELLE",
+    "i": 36,
+    "ii": 173,
+    "iii": 94
+  },
+  {
+    "department": "NIEVRE",
+    "i": 34,
+    "ii": 27,
+    "iii": 33
+  },
+  {
+    "department": "NORD",
+    "i": 81,
+    "ii": 483,
+    "iii": 296
+  },
+  {
+    "department": "OISE",
+    "i": 40,
+    "ii": 69,
+    "iii": 55
+  },
+  {
+    "department": "ORNE",
+    "i": 65,
+    "ii": 30,
+    "iii": 35
+  },
+  {
+    "department": "P.D.C.",
+    "i": 94,
+    "ii": 242,
+    "iii": 137
+  },
+  {
+    "department": "PUY DE DOME",
+    "i": 80,
+    "ii": 79,
+    "iii": 63
+  },
+  {
+    "department": "Bses PYRENEES",
+    "i": 80,
+    "ii": 49,
+    "iii": 62
+  },
+  {
+    "department": "Htes PYRENEES",
+    "i": 37,
+    "ii": 27,
+    "iii": 28
+  },
+  {
+    "department": "PYRENEES ORIENT.",
+    "i": 35,
+    "ii": 20,
+    "iii": 33
+  },
+  {
+    "department": "BAS-RHIN",
+    "i": 76,
+    "ii": 122,
+    "iii": 114
+  },
+  {
+    "department": "Ht-RHIN",
+    "i": 40,
+    "ii": 121,
+    "iii": 74
+  },
+  {
+    "department": "RHONE",
+    "i": 44,
+    "ii": 215,
+    "iii": 194
+  },
+  {
+    "department": "Hte SAONE",
+    "i": 34,
+    "ii": 32,
+    "iii": 23
+  },
+  {
+    "department": "SAONE & L.",
+    "i": 94,
+    "ii": 77,
+    "iii": 62
+  },
+  {
+    "department": "SARTHE",
+    "i": 87,
+    "ii": 45,
+    "iii": 58
+  },
+  {
+    "department": "SAVOIE",
+    "i": 44,
+    "ii": 38,
+    "iii": 35
+  },
+  {
+    "department": "Hte SAVOIE",
+    "i": 52,
+    "ii": 42,
+    "iii": 45
+  },
+  {
+    "department": "PARIS",
+    "i": 2,
+    "ii": 575,
+    "iii": 940
+  },
+  {
+    "department": "SEINE",
+    "i": 8,
+    "ii": 574,
+    "iii": 550
+  },
+  {
+    "department": "SEINE INF.",
+    "i": 75,
+    "ii": 152,
+    "iii": 174
+  },
+  {
+    "department": "SEINE & M.",
+    "i": 37,
+    "ii": 72,
+    "iii": 76
+  },
+  {
+    "department": "SEINE & O.",
+    "i": 46,
+    "ii": 328,
+    "iii": 356
+  },
+  {
+    "department": "DEUX-SEVRES",
+    "i": 71,
+    "ii": 29,
+    "iii": 33
+  },
+  {
+    "department": "SOMME",
+    "i": 57,
+    "ii": 68,
+    "iii": 61
+  },
+  {
+    "department": "TARN",
+    "i": 55,
+    "ii": 47,
+    "iii": 33
+  },
+  {
+    "department": "TARN & G.",
+    "i": 44,
+    "ii": 13,
+    "iii": 18
+  },
+  {
+    "department": "VAR",
+    "i": 33,
+    "ii": 50,
+    "iii": 81
+  },
+  {
+    "department": "VAUCLUSE",
+    "i": 40,
+    "ii": 30,
+    "iii": 41
+  },
+  {
+    "department": "VENDEE",
+    "i": 110,
+    "ii": 38,
+    "iii": 40
+  },
+  {
+    "department": "VIENNE",
+    "i": 60,
+    "ii": 29,
+    "iii": 39
+  },
+  {
+    "department": "Hte VIENNE",
+    "i": 64,
+    "ii": 47,
+    "iii": 45
+  },
+  {
+    "department": "VOSGES",
+    "i": 36,
+    "ii": 95,
+    "iii": 43
+  },
+  {
+    "department": "YONNE",
+    "i": 41,
+    "ii": 28,
+    "iii": 37
+  },
+  {
+    "department": "BELFORT",
+    "i": 3,
+    "ii": 25,
+    "iii": 13
+  }
+]
