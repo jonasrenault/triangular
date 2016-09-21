@@ -11,6 +11,7 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
 
   @Input() dpts: Array<Department>;
   @Input() year: number;
+  @Input() filters: Array<String>;
   @ViewChild('container') element: ElementRef;
 
   private interval = 500;
@@ -148,17 +149,29 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
   private populate(): void {
     this.yearLabel.transition().duration(0).delay(this.interval / 2).text(this.year);
 
-    let points = this.dpts.filter((elt:Department) => elt.year === this.year);
+    let points = this.dpts.filter((elt:Department) => elt.year === this.year && (this.filters.length === 0 || this.filters.indexOf(elt.department) !== -1));
 
     this.r.domain([0, D3.max(points, (d:Department) =>  d.total)]);
     if (!this.circles) {
       this.buildCircles(points);
     } else {
-      this.svg.selectAll('.point').data(points, (d: Department) => d.department)
-      .transition().duration(this.interval).ease(D3.easeLinear)
+      let circles = this.svg.selectAll('.point').data(points, (d: Department) => d.department);
+
+      circles.transition().duration(this.interval).ease(D3.easeLinear)
       .attr('r',  (d:Department) => this.r(d.total))
       .attr('cx', (d:Department) => this.sideScale(d.x))
-      .attr('cy', (d:Department) => this.perpScale(d.iiiShare));
+      .attr('cy', (d:Department) => this.perpScale(d.iiiShare))
+      .attr('fill', (d: Department) => D3.interpolateBlues(d.iiiShare));
+
+      circles.exit().remove();
+      circles.enter().append('circle')
+      .attr('class', 'point')
+      .attr('r',  (d:Department) => this.r(d.total))
+      .attr('cx', (d:Department) => this.sideScale(d.x))
+      .attr('cy', (d:Department) => this.perpScale(d.iiiShare))
+      .attr('fill', (d: Department) => D3.interpolateBlues(d.iiiShare))
+      .append('title')
+      .text((d:Department) => d.department);
     }
   }
 
@@ -170,6 +183,7 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
         .attr('r',  (d:Department) => this.r(d.total))
         .attr('cx', (d:Department) => this.sideScale(d.x))
         .attr('cy', (d:Department) => this.perpScale(d.iiiShare))
+        .attr('fill', (d: Department) => D3.interpolateBlues(d.iiiShare))
         .append('title')
         .text((d:Department) => d.department);
   }

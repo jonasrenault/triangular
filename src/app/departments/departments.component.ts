@@ -20,6 +20,7 @@ export class DepartmentsComponent implements OnInit {
   private loop = false;
   private subscription;
   private filters: Array<Department>;
+  private selectedDepartments = new Array<String>();
   constructor(private dptService: DepartmentService) { }
 
   ngOnInit() {
@@ -37,7 +38,7 @@ export class DepartmentsComponent implements OnInit {
       }
     });
 
-    this.timer = Observable.timer(10, 2500);
+    this.timer = Observable.timer(10, 2000);
   }
 
   private increaseYear(): void {
@@ -54,6 +55,11 @@ export class DepartmentsComponent implements OnInit {
     } else {
       this.subscription.unsubscribe();
     }
+  }
+
+  public onFilter(filter:Department): void {
+    filter.checked = !filter.checked;
+    this.selectedDepartments = this.filters.filter((elt: Department) => elt.checked).map((elt: Department) => elt.department);
   }
 
 }

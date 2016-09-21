@@ -31,7 +31,6 @@
     cursor: pointer;
 }
 :host circle {
-    fill: rgba(100,75,170,.8);
-    stroke: rgb(100,75,170);
+    stroke: #000000;
     stroke-width: 1;
 }
