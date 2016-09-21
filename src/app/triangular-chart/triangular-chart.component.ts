@@ -27,6 +27,7 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
   private axes;
   private yearLabel;
   private data;
+  private circles;
   private htmlElement: HTMLElement;
 
   constructor() { }
@@ -149,12 +150,26 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
   }
 
   private populate(): void {
-    this.r.domain([0, D3.max(this.dpts, (d:Department) =>  d.total)]);
-
     this.yearLabel.transition().duration(0).delay(this.interval / 2).text(this.year);
 
-    this.svg.selectAll('.point')
-        .data(this.dpts)
+    let points = this.dpts.filter((elt:Department) => elt.year === this.year);
+
+    this.r.domain([0, D3.max(points, (d:Department) =>  d.total)]);
+    if (!this.circles) {
+      this.buildCircles(points);
+    } else {
+      console.log(points);
+      this.svg.selectAll('.point').data(points, (d: Department) => d.department)
+      .transition().duration(this.interval).ease(D3.easeLinear)
+      .attr('r',  (d:Department) => this.r(d.total))
+      .attr('cx', (d:Department) => this.sideScale(d.x))
+      .attr('cy', (d:Department) => this.perpScale(d.iiiShare));
+    }
+  }
+
+  private buildCircles(points): void {
+    this.circles = this.svg.selectAll('.point')
+        .data(points, (d: Department) => d.department)
         .enter().append('circle')
         .attr('class', 'point')
         .attr('r',  (d:Department) => this.r(d.total))
