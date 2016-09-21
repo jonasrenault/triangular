@@ -6,6 +6,7 @@ export class Department {
   // public department: string;
   x: number;
   total: number;
+  checked: boolean;
   // private i: number;
   // private ii: number;
   // private iii: number;
@@ -16,5 +17,6 @@ export class Department {
     this.iiShare = ii / this.total;
     this.iiiShare = iii / this.total;
     this.x = this.iiShare + (this.iiiShare * 0.5);
+    this.checked = false;
   }
 }

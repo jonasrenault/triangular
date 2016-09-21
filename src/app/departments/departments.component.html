@@ -8,6 +8,15 @@
         Loop
       </label>
     </div>
+    <div class="list-group">
+      <li *ngFor="let ambassadeur of filteredAmbassadeurs" class="list-group-item">
+        <span class="name">{{ambassadeur.name}}</span>
+        <span class="detail">{{ambassadeur.year}} - {{ambassadeur.country}}</span>
+      </li>
+      <button type="button" class="list-group-item list-group-item-action" *ngFor="let filter of filters" [ngClass]="{'active': filter.checked}" (click)="filter.checked = !filter.checked">
+        {{filter.department}}
+      </button>
+    </div>
   </form>
 </div>
 <app-triangular-chart [dpts]="dpts" [year]="year"></app-triangular-chart>

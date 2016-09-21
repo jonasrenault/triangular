@@ -19,11 +19,17 @@ export class DepartmentsComponent implements OnInit {
   private timer: Observable<number>;
   private loop = false;
   private subscription;
+  private filters: Array<Department>;
   constructor(private dptService: DepartmentService) { }
 
   ngOnInit() {
     this.dptService.getDepartments().then(dpts => {
       this.dpts = dpts;
+      this.filters = new Array<Department>();
+      this.dpts.forEach((elt: Department) => {
+        if (!this.filters.some((filter: Department) => filter.department === elt.department)) this.filters.push(elt);
+      });
+      this.filters.sort((a: Department, b: Department) => a.department < b.department ? -1 : 1);
     });
     this.yearControl.valueChanges.debounceTime(300).subscribe(newValue => {
       if(newValue >= 1989 && newValue <= 2014) {
@@ -32,8 +38,6 @@ export class DepartmentsComponent implements OnInit {
     });
 
     this.timer = Observable.timer(10, 2500);
-    // this.timer = Observable.interval(2500).timeInterval().map((t) => this.increaseYear()).share().pausable(this.pauser);
-    // this.timer.subscribe((t) => this.increaseYear());
   }
 
   private increaseYear(): void {
