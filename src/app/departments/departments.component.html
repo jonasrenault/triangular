@@ -1,3 +1,9 @@
+<div class="container">
+  <form class="form-filter">
+    <h3 class="form-signin-heading">Filter list</h3>
+    <input type="number" class="form-control" placeholder="Year" autofocus [value]="year" [formControl]="yearControl" min="1989" max="2014">
+  </form>
+</div>
 <app-triangular-chart [dpts]="dpts"></app-triangular-chart>
 <div class="container">
   <p>
