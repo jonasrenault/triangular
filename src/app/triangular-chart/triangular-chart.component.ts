@@ -129,7 +129,7 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
 
     this.yearLabel = this.svg.append('text')
     .attr('class', 'year')
-    .attr('x', this.width / 2 - 70)
+    .attr('x', this.width / 2 - 170)
     .attr('y', this.height / 2)
     .attr('dy', '.28em')
     .style('font-size', this.width / 3)
