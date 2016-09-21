@@ -21,6 +21,10 @@
     font-size: 24px;
     letter-spacing: 0.1;
 }
+:host text.year {
+    font-family: monospace;
+    pointer-events: none;
+}
 :host path.arrow,
 :host text.label {
     fill: #333;

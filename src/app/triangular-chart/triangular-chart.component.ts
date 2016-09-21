@@ -10,8 +10,10 @@ import { Department } from '../department';
 export class TriangularChartComponent implements OnInit, OnChanges, AfterViewInit {
 
   @Input() dpts: Array<Department>;
+  @Input() year: number;
   @ViewChild('container') element: ElementRef;
 
+  private interval = 500;
   private host;
   private svg;
   private margin;
@@ -23,6 +25,7 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
   private r;
   private axis;
   private axes;
+  private yearLabel;
   private data;
   private htmlElement: HTMLElement;
 
@@ -121,6 +124,17 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
     .attr('letter-spacing', '-8px')
     .text(d => d)
     .on('click', (d:string) => this.rotateAxis(d));
+
+    this.yearLabel = this.svg.append('text')
+    .attr('class', 'year')
+    .attr('x', this.width / 2 - 70)
+    .attr('y', this.height / 2)
+    .attr('dy', '.28em')
+    .style('font-size', this.width / 3)
+    .style('text-anchor', 'middle')
+    .style('font-weight', 'bold')
+    .style('opacity', 0.2)
+    .text('1989');
   }
 
   private rotateAxis(d: string): void {
@@ -136,6 +150,8 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
 
   private populate(): void {
     this.r.domain([0, D3.max(this.dpts, (d:Department) =>  d.total)]);
+
+    this.yearLabel.transition().duration(0).delay(this.interval / 2).text(this.year);
 
     this.svg.selectAll('.point')
         .data(this.dpts)
