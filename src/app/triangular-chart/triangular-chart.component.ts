@@ -142,11 +142,7 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
     const angle = d === 'i' ? 120 : d === 'ii' ? 240 : 0;
     this.svg.transition().duration(600)
     .attr('transform', 'rotate(' + angle + ',' + (this.side / 2) + ',' + (this.height / 3 * 2) + ')');
-  }
-
-  private rotate(angle: number): void {
-    this.svg.transition().duration(600).
-    attr('transform', 'rotate(' + angle + ',' + (this.side / 2) + ',' + (this.height / 3 * 2) + ')');
+    this.yearLabel.attr('transform', 'rotate(' + (360 - angle) + ',' + (this.side / 2) + ',' + (this.height / 3 * 2) + ')');
   }
 
   private populate(): void {
@@ -158,7 +154,6 @@ export class TriangularChartComponent implements OnInit, OnChanges, AfterViewIni
     if (!this.circles) {
       this.buildCircles(points);
     } else {
-      console.log(points);
       this.svg.selectAll('.point').data(points, (d: Department) => d.department)
       .transition().duration(this.interval).ease(D3.easeLinear)
       .attr('r',  (d:Department) => this.r(d.total))
